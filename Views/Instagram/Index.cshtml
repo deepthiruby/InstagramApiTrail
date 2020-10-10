@@ -1,0 +1,36 @@
+﻿@model IEnumerable<InstagramApiTrail.ViewModels.InstagramMediaContent>
+@{
+    ViewBag.Title = "Index";
+}
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+<link href="~/Content/Style.css" rel="stylesheet" />
+<h2>Index</h2>
+
+<div class="module-instagram-feed">
+    <div class="container">
+        <div class="title">Follow us on Instagram Feed</div>
+        <div class="row">
+
+            @foreach (var p in Model)
+            {
+
+                <div class="col-md-3 more imgStyle">
+                    <a href="@p.Permalink" target="_blank">
+                        <img width="200" height="200" alt="" src="@p.Media_Url" />
+                    </a>
+                </div>
+
+
+
+            }
+
+
+            <button class="more">
+                <i class="fas fa-plus"></i>
+            </button>
+
+
+        </div>
+    </div>
+</div>

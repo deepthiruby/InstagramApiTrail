@@ -1,0 +1,19 @@
+﻿body {
+    padding-top: 20px;
+}
+footer{
+    padding: 50px;
+}
+.col-md-3.more.imgStyle {
+    padding: 5px !important;
+   
+}
+
+.imgStyle{
+    position: relative;
+    overflow: hidden;
+}
+.imgStyle img{
+    padding:5px;
+    border-radius: 2px;
+}
